@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "Upload css.css"> 
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class = "header">
+        <div class="grid-container1">
+
+            <div class="projectlogo">
+                <img id="projectlogo" src="project logo.jpeg" alt= "logo">
+            </div>
+               
+            <div class="titleName">
+               
+                <a id="titleName">Smartbuy</a>
+            </div>
+
+        </div>
+        
+    </div>
+
+        
+    <div class="nav">
+
+        <div class= "navbar">
+             <br>
+             <a href='/home/home.html' class="text">&nbsp;Home</a>
+             <a href='/about/about.html' class="text" id="active">About</a>
+             <a href='/shop/Shop.html' class="text">Products</a>
+             <a href='/recipes/Recipes.html' class="text">Cart</a>
+         </div>
+
+         <div class="connect">
+             <a  href="/connect/connect.html"><img id="connectImg" src="{{url_for('about.static', filename='image/connect.png') }}" alt= "sign in" ></a>
+         </div>
+     
+ </div>
+
+
+    <div class="grid-container">
+        <div class="Upload"> 
+            <div class="intro">
+
+<h1>Upload a new product</h1>
+</div>
+    <form>
+        <div class="intro">
+        <label for="Pname">Product name:</label><br>
+        <input type="text" id="Pname" name="Pname"><br>
+        
+        <label for="category">category:</label><br>
+        <input type="text"id="category" name="category"><br>
+        
+        <label for="min">Minimum amount of buyers:</label><br>
+        <input type="text" id="min" name="mim"><br>
+        
+        <label for="Description">Description:</label><br>
+  
+        <textarea id="Description" name="Description" cols="50" rows="4"></textarea><br>
+
+        <label for="price">price:</label><br>
+        <input type="text" id="price" name="price"><br>
+       
+        <label for="delivery time">delivery time:</label><br>
+        <input type="text" id="delivery time" name="delivery time"><br><br>
+
+        <label for="image Upload">image Upload:</label><br>
+        <input type="image" id="image Upload" name="image Upload"><br><br><br>
+        
+        <input type="submit" value="Upload product">
+        </div>
+     </form> 
+
+     </div>
+     </div>
+
+     <div class="footer">
+        <div id="footer">
+            <br>
+            <a href="/contact_me/contact me.html" class="text">Contact Us</a>
+    
+        </div>
+    </div>
+
+</body>
+</html>
