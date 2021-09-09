@@ -20,7 +20,7 @@
   html, body{
     margin: 0%;
  }
- 
+
  .grid-container1{
    display: grid;
    grid-template-columns: 450px 700px auto;
@@ -79,6 +79,12 @@
  
  }
  
+ .addButton{
+  grid-column: 1 / span 2;
+  grid-row: 2/span 2;
+  height: auto;
+  margin: 0px;
+}
  
  .icon i:hover{
  color:rgb(60, 153, 220);
@@ -159,18 +165,27 @@
     font-size: x-large;
  }
  
- @keyframes pulse{
-   0%,100%{
-       background-color:  rgb(213, 243, 254);
-   }
-   50%{
-       background-color:  rgb(213, 243, 254);
-   }
- 
- }
+ .Add {
+  background-color:  #f4b7c7;
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: normal;
+  font-variant: small-caps;
+  font-stretch: semi-expanded;    padding: 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: pulse 4s infinite ;
+}
+
 
  body {background-color: rgb(213, 243, 254);}
-
+ 
+ .Add:hover {
+  opacity: 1;
+}
 
  .center {
     display: block;
