@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 18px;
+    margin: 1px;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". Upload ."
+      ". Upload ."
+      ". Upload .";
+  }
+  .Upload { 
+
+    grid-area: Upload; ;
+    padding: 18px;
+    margin: 1px;
+  }
+
+  .sendB {
+    background-color:  rgb(102, 211, 250);
+    font-size: 25px;
+    font-family: fantasy;
+    font-style: italic;
+    padding: 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 50%;
+    
+  }
+  
+  .sendB:hover {
+  opacity: 1;
+  }
+  
+  
+  @font-face{
+  font-family: alphab;
+  src: url("../Alphabetized\ Cassette\ Tapes\ Classic.ttf");
+  }

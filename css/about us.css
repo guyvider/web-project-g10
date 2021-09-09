@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 18px;
+    margin: 1px;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". about-us ."
+      ". about-us ."
+      ". about-us .";
+  }
+  .about-us { 
+  
+    grid-area: personal-account; 
+    padding: 18px;
+    margin: 1px;
+  }

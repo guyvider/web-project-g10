@@ -21,7 +21,7 @@ html, body{
  }
  
  #logoImg{
-   background-color:rgb(228, 236, 241);
+   background-color:rgb(102, 211, 250);
    border-radius: 100%;
    width: 100px; 
    padding: 1px; 
@@ -36,13 +36,9 @@ html, body{
  }
  
  #titleName{
-   color: rgb(60, 153, 220);
+   color: rgb(102, 211, 250);
    text-decoration: none;
-   font-family: fantasy;
-   font-style: italic;
-   font-weight: normal;
-   font-variant: small-caps;
-   font-stretch: semi-expanded;
+   font-family: alphab;
    font-size: 80px;
  }
  .socialNetworks{
@@ -62,12 +58,12 @@ html, body{
  
  
  .icon i:hover{
- color:rgb(60, 153, 220);
+ color:rgb(102, 211, 250);
  }
  
  .nav{
    display: grid;
-   grid-template-columns: 1500px auto ;
+   grid-template-columns: 850px auto;
    grid-template-rows: 80px;
    height: 80px;
  }
@@ -76,42 +72,34 @@ html, body{
    grid-column: 1 / span 1;
    background-color: rgb(102, 211, 250);
    word-spacing: 60px;  
-   text-align: center;
+   text-align: left;
    padding-left: 80px;
  }
  
  .text{
    color:black;
    text-decoration: none;
-   font-family: fantasy;
-   font-style: italic;
-   font-weight: normal;
-   font-variant: small-caps;
-   font-stretch: semi-expanded;
+   font-family: alphab;
    font-size: 40px;
  }
  .textE{
    color:black;
    text-decoration: none;
-   font-family: fantasy;
-   font-style: italic;
-   font-weight: normal;
-   font-variant: small-caps;
-   font-stretch: semi-expanded;
+   font-family: alphab;
    font-size: 20px;
    justify-items: center;
  }
  
  #active{
-   color: rgb(0, 0, 0);
+   color: rgb(102, 211, 250);
  }
  
  .connect{
    grid-column: 2 / span 1;
    background-color: rgb(102, 211, 250);
    text-align: right;
-   padding-right: 30px;
-   padding: 30px;
+   padding-right: 10px;
+   padding: 10px;
  }
  
  #connectImg{
@@ -133,37 +121,18 @@ html, body{
    justify-items: center;
  }
  
- .intro{
-    font-family: fantasy;
-    font-weight: normal;
-    font-variant: small-caps;
-    font-size: x-large;
-    
-    
-    
- }
  
  
  @keyframes pulse{
    0%,100%{
-       background-color:  rgb(213, 243, 254);
+       background-color:  rgb(102, 211, 250);
    }
    50%{
-       background-color:  rgb(213, 243, 254);
+       background-color:  rgb(60, 153, 220);
    }
  
  }
-
- body {background-color: rgb(213, 243, 254);}
-
-
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-
-  
-  
+ @font-face{
+   font-family: alphab;
+   src: url("../Alphabetized\ Cassette\ Tapes\ Classic.ttf");
+ }
