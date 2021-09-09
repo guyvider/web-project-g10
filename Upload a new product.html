@@ -7,7 +7,7 @@
 
     <link rel = "stylesheet" href = "Upload css.css"> 
 
-    <title>Document</title>
+    <title>Upload a new product</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         <div class="grid-container1">
 
             <div class="projectlogo">
-                <img id="projectlogo" src="project logo.jpeg" alt= "logo">
+                <img id="projectlogo" src="logo.jpeg" alt= "logo">
             </div>
                
             <div class="titleName">
@@ -56,7 +56,7 @@
         <label for="Pname">Product name:</label><br>
         <input type="text" id="Pname" name="Pname"><br>
         
-        <label for="category">category:</label><br>
+        <label for="category">Category:</label><br>
         <input type="text"id="category" name="category"><br>
         
         <label for="min">Minimum amount of buyers:</label><br>
@@ -66,18 +66,22 @@
   
         <textarea id="Description" name="Description" cols="50" rows="4"></textarea><br>
 
-        <label for="price">price:</label><br>
+        <label for="price">Price:</label><br>
         <input type="text" id="price" name="price"><br>
        
-        <label for="delivery time">delivery time:</label><br>
+        <label for="delivery time">Delivery time:</label><br>
         <input type="text" id="delivery time" name="delivery time"><br><br>
 
-        <label for="image Upload">image Upload:</label><br>
+        <label for="image Upload">Image upload:</label><br>
         <input type="image" id="image Upload" name="image Upload"><br><br><br>
         
-        <input type="submit" value="Upload product">
         </div>
      </form> 
+
+     <div class="addButton">
+                
+        <button type="submit" class="Add" onclick="addedToCart()" value="Close">Upload product</button>
+    </div> 
 
      </div>
      </div>
