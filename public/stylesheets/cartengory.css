@@ -1,0 +1,40 @@
+h3 {
+    margin: 0;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #818078;
+    font-family: fantasy;
+
+}
+
+h3 {
+    font-size: 16px;
+    font-family: fantasy;
+    color: var(--text-gray);
+}
+
+    h3:before, h3:after {
+        content: '';
+        height: 1px;
+    }
+
+    h3:after {
+        background: linear-gradient(to right, transparent, #818078);
+    }
+
+    h3:before {
+        background: linear-gradient(to right, #818078, transparent);
+    }
+p {
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-stretch: semi-expanded;
+    font-size: 20px;
+}

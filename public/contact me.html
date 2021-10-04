@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Contact Me |Smart Buy</title>
+    <link rel="stylesheet" href="stylesheets/GeneralCssPage1.css">
+    <link rel="stylesheet" href="stylesheets/contact me.css">
+    <script src="javascripts/JS.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="grid-container1">
+
+            <div class="logoImg">
+                <img id="logoImg" src="images/logo.jpg" alt="logo">
+            </div>
+
+            <div class="titleName">
+
+                <a id="titleName">Smart Buy</a>
+
+            </div>
+
+        </div>
+        <div class="nav">
+
+
+            <div class= "navbar">
+                <br>
+                <a href='./mainpage.html' class="text">&nbsp;Home</a>
+                <a href='./about us.html' class="text" id="active">About</a>
+                <a href='./category.html' class="text">Products</a>
+                <a href='./uploadnewprod.html' class="text">NewProduct</a>
+                <a href='./userhistory.html' class="text">MyHistory</a>
+    
+            </div>
+
+            <div class="connect">
+
+                <a  href="./connect.html"><img id="connectImg" src="images/login button.jpg" alt= "sign in" ></a>
+                <a href="./cartpage.html"><img id="shopImg" src="images/shoppingcart.jpg" alt= "shopBag" ></a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="main">
+            <div class="grid-container2">
+                <div class="text">
+
+                    <h1 style="color: #3c99dc;">Contact Us</h1>
+
+                    <form>
+
+                        <label for="FullName"></label>
+                        <input type="text" id="FullName" name="FullName" placeholder="Full Name" style="width: 30%; height: 50px;">
+
+                        <label for="Phone"></label>
+                        <input type="text" id="Phone" name="Phone" placeholder="Phone Number" style="width: 30%; height: 50px;">
+
+                        <label for="Email"></label>
+                        <input type="text" id="Email" name="Email" placeholder="Email Address *" style="width: 30%; height: 50px;">
+
+                        <br> <br>
+
+                        <label for="Comment"></label>
+                        <textarea id="Comment" name="Comment" cols="50" rows="4" placeholder="Write a comment .." style="width: 92%; height: 150px;"></textarea>
+                        <br>
+                        <button type="submit" class="sendB" onclick="MessBox_contactMe(document.getElementById('Phone').value,document.getElementById('Email').value,document.getElementById('Comment').value )" value="Close">Send</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div id="footer">
+                <br>
+                <a href="./contact me.html" class="text">Contact Us</a>
+                <a href="./contact me.html" class="text">Facebook</a>
+                <a href="./contact me.html" class="text">Instagram</a>
+                <a href="./contact me.html" class="text">Privacy</a>
+                <a href="./contact me.html" class="text">Cancellation</a>
+
+
+
+
+            </div>
+   </div>
+
+
+
+
+
+</body>
+
+
+</html>

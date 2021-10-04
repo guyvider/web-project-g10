@@ -1,0 +1,150 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+    <title>Connect | Smart Buy </title>
+    <link rel="stylesheet" href="stylesheets/GeneralCssPage1.css">
+    <link rel="stylesheet" href="stylesheets/connect.css">
+    <script src="javascripts/JS.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class = "header">
+        <div class="grid-container1">
+
+            <div class="logoImg">
+                <img id="logoImg" src="images/logo.jpg" alt= "logo">
+            </div>
+               
+            <div class="titleName">
+               
+                <a id="titleName">Smartbuy</a>
+            </div>
+
+        </div>
+        
+    </div>
+        <div class="nav">
+
+            <div class= "navbar">
+                <br>
+                <a href='./mainpage.html' class="text">&nbsp;Home</a>
+                <a href='./about us.html' class="text" id="active">About</a>
+                <a href='./category.html' class="text">Products</a>
+                <a href='./uploadnewprod.html' class="text">NewProduct</a>
+                <a href='./userhistory.html' class="text">MyHistory</a>
+    
+            </div>
+ 
+            <div class="connect">
+
+                <a  href="./connect.html"><img id="connectImg" src="images/login button.jpg" alt= "sign in" ></a>
+                <a href="./cartpage.html"><img id="shopImg" src="images/shoppingcart.jpg" alt= "shopBag" ></a>
+
+            </div>
+         
+     </div>
+
+        <div class="main">
+            <div class="grid-container2">
+                <div class="text">
+
+                    <h1 style="color: #3c99dc; text-align: center;">Connect</h1>
+
+                    <div style="text-align: center;">
+                        <button class="sendB"
+                                onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">
+                            Sign
+                            Up
+                        </button>
+                        <button class="sendB"
+                        onclick="signUpClick(),able_fn(),able_ln(),able_e_u(),able_p_u(), disdable_e_i(), disable_p_i()">
+                        Sign
+                    up as business
+                </button>
+                        <button class="sendB"
+                                onclick="signInClick(),able_e_i(),able_p_i(), disable_fn(), disable_ln(), disable_e_u(),disable_p_u()">
+                            Sign
+                            In
+                        </button>
+ 
+                    </div>
+                    <form id="signup" style="display: none;">
+
+                        <label for="FirstName"> <b>First Name:</b> </label>
+                        <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name .."
+                               style="width: 30%; height: 50px;" required>
+                        <br>
+                        <label for="LastName"><b>Last Name:</b></label>&nbsp;
+                        <input type="text" id="LastName" name="LastName" placeholder="Enter your last name .."
+                               style="width: 30%; height: 50px;" required>
+                        <br>
+                        <label for="Emailup"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="Emailup" name="Emailup" placeholder="Enter your Email Address .."
+                               style="width: 30%; height: 50px;" required>
+                        <br>
+                        <label for="pwdup"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" id="pwdup" name="pwdup" maxlength="8"
+                               placeholder="Choose a password (max 8 digits)" style="width: 30%; height: 50px;" required>
+                        <br>
+                        <button type="submit" class="sendB"
+                                onclick="MessBox_connectUP(document.getElementById('FirstName').value,document.getElementById('LastName').value,document.getElementById('Emailup').value, document.getElementById('pwdup'))"
+                                value="Close">
+                            Go!
+                        </button>
+
+
+                    </form>
+
+                    <form id="signin" style="display: none;">
+
+
+                        <label for="Emailin"><b>Email:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="Emailin" name="Emailin" placeholder="Enter Email address you sign up with .."
+                               style="width: 30%; height: 50px;" required>
+                        <br>
+                        <label for="pwdin"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" id="pwdin" name="pwdin" maxlength="8" placeholder="Enter your password"
+                               style="width: 30%; height: 50px;" required>
+                        <br>
+                        <button type="submit" class="sendB"
+                                onclick="MessBox_connectIN(document.getElementById('Emailin').value, document.getElementById('pwdin'))"
+                                value="Close">
+                            Go!
+                        </button>
+                        <button class="sendB" onclick="forgotPassword(document.getElementById('Emailin').value)"
+                                value="close">
+                            Forgot my password
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div id="footer">
+                <br>
+                <a href="./contact me.html" class="text">Contact Us</a>
+                <a href="./contact me.html" class="text">Facebook</a>
+                <a href="./contact me.html" class="text">Instagram</a>
+                <a href="./contact me.html" class="text">Privacy</a>
+                <a href="./contact me.html" class="text">Cancellation</a>
+
+
+
+
+            </div>
+   </div>
+
+</body>
+
+
+</html>
